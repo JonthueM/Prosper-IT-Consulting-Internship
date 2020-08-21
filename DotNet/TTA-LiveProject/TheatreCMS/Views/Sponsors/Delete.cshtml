@@ -1,0 +1,96 @@
+﻿@model TheatreCMS.Models.Sponsor
+@using TheatreCMS.Controllers
+
+@{
+    ViewBag.Title = "Delete";
+}
+    <div class="container">
+        <h2>Delete</h2>
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <h4>Sponsor</h4>
+            <hr />
+            <div class="row">
+                <dl class="dl-horizontal justify-content-start col-md-12">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.LogoId)
+                    </dt>
+
+                    <dd>
+                        <img src="@Url.Action("DisplayPhoto", "Photo", new { id = Model.LogoId })" class="medium_size" alt="Sponsor Logo Image" />
+                        @*{
+                            string img = "";
+                            if (Model.Logo != null)
+                            {
+                                byte[] thumbBytes = ImageUploadController.ImageThumbnail(Model.Logo, 100, 100);
+                                var base64 = System.Convert.ToBase64String(thumbBytes);
+                                img = String.Format("data:image/png;base64,{0}", base64);
+                            }
+
+                        <img src="@img" />}*@
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Height)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Height)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Width)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Width)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Current)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Current)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Link)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Link)
+                    </dd>
+
+                </dl>
+                
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color text-center">
+                <button type="submit" class="iconBtn">
+                    <i class="fa fa-trash-alt fa-fw"></i>Delete
+                </button>
+
+
+                @*
+                <input type="submit" value="Delete" class="btn btn-danger btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")*@
+            </div>
+        }
+
+        <div class="iconBtnContainer">
+            <button class="iconBtn" onclick="window.location.href ='@Url.Action("Index", "Sponsors")'">
+                <i class="fa fa-hand-point-left fa-fw"></i>Back To List
+            </button>
+        </div>
+    </div>

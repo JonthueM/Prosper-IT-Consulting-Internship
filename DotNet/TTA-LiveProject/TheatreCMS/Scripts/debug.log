@@ -1,0 +1,18 @@
+[0812/002146.088:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0812/002146.088:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0812/002146.088:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0812/002146.088:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0812/002146.088:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0812/002146.088:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0812/002146.088:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0812/002146.088:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0812/002146.088:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0812/002146.098:ERROR:exception_snapshot_win.cc(98)] thread ID 7572 not found in process
+[0812/002146.098:ERROR:exception_snapshot_win.cc(98)] thread ID 30512 not found in process
+[0812/002146.098:ERROR:exception_snapshot_win.cc(98)] thread ID 15876 not found in process
+[0812/002146.098:ERROR:exception_snapshot_win.cc(98)] thread ID 29144 not found in process
+[0812/002146.098:ERROR:exception_snapshot_win.cc(98)] thread ID 20628 not found in process
+[0812/002146.098:ERROR:exception_snapshot_win.cc(98)] thread ID 13660 not found in process
+[0812/002146.098:ERROR:exception_snapshot_win.cc(98)] thread ID 31308 not found in process
+[0812/002146.098:ERROR:exception_snapshot_win.cc(98)] thread ID 35824 not found in process
+[0812/002146.098:ERROR:exception_snapshot_win.cc(98)] thread ID 34888 not found in process
