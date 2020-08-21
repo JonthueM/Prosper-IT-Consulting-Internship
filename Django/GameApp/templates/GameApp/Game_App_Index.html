@@ -1,0 +1,35 @@
+ {% extends 'GameApp/Game_App_Base.html' %}
+ {% load staticfiles %}
+ {% block templatecontent %}
+ {% block pagetop-css %} cover-mouth {% endblock %}
+
+
+ {% block page-subtitle %}Listed Secrets{% endblock %}
+
+
+ <section>
+
+   <div class="flex-container">
+       <table class="table-striped">
+            <tr>
+                    <th class="col-md">Game Name</th>
+                    <th class="col-md">Potential Release</th>
+                    <th class="col-md">Main Console</th>
+                    <th class="col-md">Sources</th>
+                     <th class="col-md">&nbsp;Info</th>
+            </tr>
+           {% for event in games %}
+            <tr>
+                        <td class="col-md">{{ event.Game_Name }}</td>
+                        <td class="col-md">{{ event.Release }}</td>
+                        <td class="col-md">{{ event.Main_Console }}</td>
+                        <td class="col-md">{{ event.Sources }}</td>
+                        <td class="col-md"><a href="{{event.pk}}/Details"><button class="primary-light-button" id="info-button">Details</button></a></td>    <!-- creates a link for that specific food item -->
+            </tr>
+           {% endfor %}
+
+       </table>
+   </div>
+
+ </section>
+{% endblock %}

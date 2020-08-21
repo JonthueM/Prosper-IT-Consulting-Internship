@@ -1,0 +1,33 @@
+ {% extends 'GameApp/Game_App_Base.html' %}
+ {% load staticfiles %}
+ {% block templatecontent %}
+ {% block pagetop-css %} newsBG {% endblock %}
+
+
+ {% block page-subtitle %} Official News{% endblock %}
+
+        <div class="container news">
+            {% for article in articles%} <!-- Iterates through the array of articles -->
+                <!-- Creates a new line for each item, sets the href to the full url, gives the article title and date -->
+            <div id="test" class="row  row-no-gutters articles">
+                <div class="col-2 col1">
+                    <a href="{{article.url}}">
+                        <img class="img-fluid" src="{{article.img}}">
+                    </a>
+                </div>
+                <div class="col-10 col2">
+                      <p class="newsDetails">
+                        <a href="{{article.url}}">
+                            <span class="title">{{article.title}}</span><br>
+                               <span class="description">{{article.summary}}</span><br>
+                            <span class="author">by {{article.author}} on <i>{{article.time}}</i></span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+
+}
+a{text-decoration: none;}
+a:hover{text-decoration-line: none !important;}
+
+html {
+    background-color: black !important;
+}
+section{
+    background-color: black !important;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,p{
+    text-align: center;
+}
+h1 {
+    margin-top: 55px;
+}
+
+.cover-games {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./images/GameApp-Main.png') right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+
+  }
+.cover-mouth {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./images/quiet.jpg') right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+.intel {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./images/intel.jpg') right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+.newsBG {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./images/news.jpg') right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+th.col-md {
+    background-color: slategrey;
+    color: white;
+    padding: 20px 24px;
+    font-size: 25px;
+    margin: auto 0;
+}
+td.col-md {
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    padding: 20px 24px;
+    margin: auto 15px;
+    /* border-color: grey; */
+}
+table.table-striped {
+    margin-top: -16px;
+}
+table, td, th {
+  border: 1px solid midnightblue;
+}
+
+button#info-button {
+    background-color: #dae0e5;
+    padding: 12px 17px;
+    border: none;
+    border-radius: 3px;
+}
+
+button#info-button:hover{
+   background-color: whitesmoke;
+}
+
+th, td{
+    padding: 20px 24px;
+}
+
+.tableDetail{
+    margin: 20px 30px;
+    margin-top: -10px;
+    color: white;
+}
+.tableDetail p {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.blackSection{
+    margin: 0;
+    margin-top: -25px;
+    background-color: black;
+    mpadding-top: 25px;
+}
+
+button.primary-bright-button {
+    background-color: #dae0e5;
+    margin-left: 45%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+button.primary-bright-button:hover{
+    background-color: whitesmoke;
+}
+
+body{
+    background-color: black;
+}
+
+p, label, H3{
+    color: white;
+}
+
+.btn-group button {
+  float: left; /* Float the buttons side by side */
+
+
+}
+.blackSection{
+    margin: 0;
+    margin-top: -25px;
+    background-color: black;
+    mpadding-top: 25px;
+}
+
+button.primary-bright-button {
+    background-color: #dae0e5;
+    margin-left: 45%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.centerButtons{
+   margin-left: 40%;
+    margin-top: 50px;
+}
+.centerButtons2{
+    margin-left: 35%;
+}
+
+h3{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#test{background-color: black; color: white;}
+
+.news{
+    border-bottom: .18rem solid #f6f6f6 !important;
+    text-align: justify;
+
+}
+
+.newsDetails{
+    text-align: justify;
+}
+.articles{
+    color: white !important;
+    margin: 25px 20px;
+    margin-left: 150px;
+    width: 70%;
+    border-bottom: 1px solid white;
+
+}
+.articles:hover{
+    border-bottom: 2px  solid red;
+    border-left: 2px solid red;
+}
+
+.newsImage{
+    width: 250px;
+    max-height: auto;
+    margin: 0px;
+    padding-right: -125px;
+    margin-left: 330px;
+}
+
+.title{
+    font-weight: bold;
+    font-family: Montserrat Helvetica, Ubuntu, Roboto, Noto, Arial, sans-serif;
+    color: white !important;
+
+}
+.title:hover{
+    color: red !important;
+
+}
+.description{
+    font-size: 16px;
+    font-family: Montserrat Helvetica, Ubuntu, Roboto, Noto, Arial, sans-serif;
+}
+.col2{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.col1{
+    margin-right: 0px;
+    padding-right: 0px;
+}
+.author{
+    font-size: 12px;
+    font-family: Montserrat Helvetica, Ubuntu, Roboto, Noto, Arial, sans-serif;
+}

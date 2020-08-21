@@ -1,0 +1,31 @@
+ {% extends 'GameApp/Game_App_Base.html' %}
+ {% load staticfiles %}
+ {% block templatecontent %}
+ {% block pagetop-css %} intel {% endblock %}
+
+
+ {% block page-subtitle %}{{game.Game_Name}} Intel{% endblock %}
+
+                <section>
+                    <div class="flex-container">
+                        <form method="post">
+                            {%csrf_token%}
+                            <table class="mx-auto" >
+                                {{form.as_table}}
+                            </table>
+                            {{form.non_filed_errors}}
+
+                                <div class="centerButtons2">
+                            <button class="contact-btn" type="submit">Save Changes</button>
+                            <button class="contact-btn" type="button" onclick= "location.href='{% url 'deleteEdit' pk=pk %}'">Delete Event</button>
+                            <button class="contact-btn" type="button" onclick="location.href='{% url 'listEvent' %}'">Back to Events</button>
+                        </div>
+                        </form>
+                        <hr/>
+
+
+
+                    </div>
+                </section>
+
+{% endblock %}

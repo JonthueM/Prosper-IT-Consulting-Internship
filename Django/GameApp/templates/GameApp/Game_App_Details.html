@@ -1,0 +1,36 @@
+ {% extends 'GameApp/Game_App_Base.html' %}
+ {% load staticfiles %}
+ {% block templatecontent %}
+ {% block pagetop-css %} intel {% endblock %}
+
+
+ {% block page-subtitle %}{{game.Game_Name}} Intel{% endblock %}
+
+
+<section class="blackSection">
+    <div class="flex-container tableDetail">
+        <table class="mx-auto">
+           <p>{{game.Game_Name}}</p>
+            <tr>
+                <th>Potential Release:</th>
+                <td>{{game.Release}}</td>
+            </tr>
+            <tr>
+                <th>Main Console:</th>
+                <td>{{game.Main_Console}}</td>
+            </tr>
+            <tr>
+                <th>Spy Sources:</th>
+                <td>{{game.Sources}}</td>
+            </tr>
+
+        </table>
+      <div class="centerButtons">
+          <button class="contact-btn" type="button" onclick=" location.href='{% url 'edit_Event' game.pk %}'">Edit Item</button>
+        <button class="contact-btn " type="button" onclick=" location.href='{% url 'listEvent' %}'">Back to the List</button>
+
+        <hr />
+
+    </div>
+</section>
+{% endblock %}

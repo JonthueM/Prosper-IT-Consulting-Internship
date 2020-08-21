@@ -1,0 +1,19 @@
+{% extends 'Base.html' %}
+{% load staticfiles %} <!-- must load static files on every template, even though it extends another template -->
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'GameApp/Game_App_Styles.css' %}">
+{% endblock %}
+
+{% block pagetop-css %} cover-games {% endblock %}
+{% block page-title %}Game App{% endblock %}
+
+{% block button1 %}<a href="{% url 'addEvent' %}" class="contact-btn">Got Leaked Release?</a>{% endblock %}
+{% block button2 %}<a href="{% url 'listEvent' %}" class="contact-btn">List Leaked</a>{% endblock %}
+{% block button3 %}<a href="{% url 'latestNews' %}" class="contact-btn">Latest News</a>{% endblock %}
+
+
+{% block appcontent %}
+    {% block templatecontent %}{% endblock %} <!-- section that all the template specific content will render within -->
+{% endblock %}

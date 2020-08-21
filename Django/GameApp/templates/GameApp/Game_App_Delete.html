@@ -1,0 +1,23 @@
+ {% extends 'GameApp/Game_App_Base.html' %}
+ {% load staticfiles %}
+ {% block templatecontent %}
+ {% block pagetop-css %} intel {% endblock %}
+
+
+ {% block page-subtitle %}{{game.Game_Name}} Intel{% endblock %}
+
+            <form method='POST'>
+                {% csrf_token %}
+
+                <h3>Are you certain that you want to delete this information?</h3>
+                <p> You are about to delete {{ form.Game_Name }}.</p>
+
+
+                 <DIV class="centerButtons">
+                <input type="submit" value="Delete Entry" class="contact-btn" >
+                <a href="{% url 'edit_Event' pk=form.pk %}"><button class="contact-btn" type="button" >Return back to edit</button></a>
+            </DIV>
+            </form>
+
+
+{% endblock %}
