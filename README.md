@@ -1,5 +1,5 @@
 # The-Tech-Academy
-<a href="https://www.learncodinganywhere.com/"><img src="https://www.learncodinganywhere.com/images/circleLogo.jpg" alt="The Tech Academy"></a>
+<a href="https://www.learncodinganywhere.com/ProsperITConsulting"><img src="https://www.learncodinganywhere.com/images/pitc/ProsperITConsulting.png" alt="The Tech Academy"></a>
 
 
 **Project:** Python & C# Live Project
