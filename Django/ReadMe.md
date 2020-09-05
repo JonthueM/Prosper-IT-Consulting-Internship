@@ -216,6 +216,5 @@ Background Hero
 
 
 
-##Other Skills Learned
 
 Jump to: [Font End Stories](#front-end-stories), [Back End Stories](#back-end-stories),  [Page Top](#django-live-project)
