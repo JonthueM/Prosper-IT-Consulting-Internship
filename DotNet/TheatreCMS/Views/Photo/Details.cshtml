@@ -1,0 +1,85 @@
+﻿@model TheatreCMS.Models.Photo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<link href="https://fonts.googleapis.com/css?family=BioRhyme&display=swap" rel="stylesheet">
+
+<div class="photodetailspagedecorating">
+ 
+    
+
+    
+     
+<h2>Details</h2>
+
+
+    
+  
+    <h4>Photo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PhotoFile)
+        </dt>
+        <dd class="image-spacing" max-width: 500px>
+            <img class="large_size" src='@Url.Action("DisplayPhoto", "Photo", new { id = Model.PhotoId })' />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OriginalHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OriginalHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OriginalWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OriginalWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        @if (TheatreCMS.Controllers.PhotoController.FindDependencies(Model.PhotoId).HasDependencies == false)
+        {
+            <dt>
+                This photo is not being used
+            </dt>
+        }
+        else
+        {
+            <dt>
+                This photo is being used by the following items: 
+            </dt>
+            <dd>
+                @foreach (var production in TheatreCMS.Controllers.PhotoController.FindDependencies(Model.PhotoId).ProductionPhotos)
+                {
+                    @production.Title; <text> - Season: </text>
+                    @production.Production.Season; <br />
+                }
+                @foreach (var sponsor in TheatreCMS.Controllers.PhotoController.FindDependencies(Model.PhotoId).Sponsors)
+                {
+                    @sponsor.Name <br />
+                }
+            </dd>
+        }
+
+    </dl>
+</div>
+      
+    <p class=" backandeditspacing">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.PhotoId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+
+    
